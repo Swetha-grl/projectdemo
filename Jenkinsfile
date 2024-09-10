@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven'  // Name of Maven tool configured in Jenkins
+        maven 'maven'  // Name of Maven tool configured in Jenkins
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/your-username/my-java-app.git', branch: 'main'
+                git url: 'https://github.com/Swetha-grl/projectdemo.git', branch: 'master'
             }
         }
 
